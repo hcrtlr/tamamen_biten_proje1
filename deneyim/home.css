@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {}
+
+.stick-navbar {
+    position: fixed;
+    display: none;
+    width: 85.4%;
+}
+
+.button1 {
+
+    background-color: rgb(248, 249, 250);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    justify-content: center;
+}
+
+.button1 a {
+    color: #525452;
+   text-align: center;
+   justify-content: center;
+    text-decoration: none;
+}
+
+.ayrım {
+    font-size: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.button1:hover a {
+    color: #c5a179;
+}
+
+.anabuton:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #000;
+}
+
+.altseçenek:hover {
+    background-color: #525452;
+}
+
+.altseçenek {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10% 15%;
+}
+
+.social {
+    padding-right: 1rem;
+}
+
+.social i {
+    color: #000;
+}
+
+.slide-button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 30%;
+    background-color: #c5a179;
+    float: left;
+    margin-left: 15px;
+}
+
+.slide-yazi {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    padding: 1rem;
+    text-align: start;
+}
+
+.slide-button a {
+    border: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    size: 1.5rem;
+}
+
+.carousel-item {
+    min-height: 280px;
+}
+
+.sections{
+    width: 75%;
+}
+.blog{
+    display: flex;
+}
+.acıklama {
+    padding: 3%;
+    text-align: center;
+}
+
+.konu {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #525452;
+    font-style: oblique;
+}
+
+.baslik {
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.ekbilgi {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5254527f;
+    font-style: oblique;
+}
+
+.continue button {
+    background-color: #c5a179;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.continue a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.social1 {
+    padding: 3%;
+}
+
+.social1 a {
+    opacity: 75%;
+    color: #525452;
+}
+
+.reading {
+    justify-content: space-between;
+}
+
+.aside_tamami{
+width: 25%;
+}
+
+.aside {
+    padding: 5%;
+    background-color: #f8f9fa;
+    margin-top: 8%;
+}
+
+.aside h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 3%;
+}
+
+.aside h6 {
+    font-weight: normal;
+}
+
+.aside .col-8 p {
+    opacity: 50%;
+}
+
+.aside .btn-secondary {
+    padding: 5px;
+    margin: 1px;
+    opacity: 68%;
+    font-size: small;
+}
+
+@media(max-width: 1200px) and (min-width: 768px) {
+
+    .stick-navbar {
+        width: 90.5%;
+        height: 70px;
+    }
+
+    .stick-navbar .navbar {
+        width: 100%;
+    }
+
+    .stick-navbar .logo {
+        display: none;
+    }
+
+    .aside {
+        max-height: 600px;
+        overflow: hidden;
+    }
+
+    .aside .aside_alt {
+        display: none;
+    }
+
+    .aside .btn-light {
+        background-image: url('./img/Beige Minimalist Mood Photo Collage.png');
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .aside .col-8 {
+        color: white;
+        text-align: start;
+    }
+
+    .social {
+     padding: 5px;
+    }
+}
+
+@media(max-width:768px) {
+    .stick-navbar .logo {
+        display: none;
+    }
+
+    .stick-navbar .navbar {
+        display: none;
+    }
+
+    .blog .sections{
+        display: block;
+        width: 100%;
+    }
+   
+    .aside_tamami{
+        display: none;
+    } 
+    nav .button1{
+        width: 17%;
+    
+    }
+    .button1 a{
+        font-size: small;
+    }
+
+    nav .ayrım{
+        padding:0px;
+    }
+
+    .slide-yazi, .slide-button a{
+        font-size: small;
+    }
+}
